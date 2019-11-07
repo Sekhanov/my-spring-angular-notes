@@ -5,7 +5,8 @@
             "name": "notes-api",
             "request": "launch",
             "mainClass": "com.sekhanov.notesapi.DemoApplication",
-            "projectName": "notes-api"
+            "projectName": "notes-api",
+            "console": "internalConsole"
         }
     ]
 }

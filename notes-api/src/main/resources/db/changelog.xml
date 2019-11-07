@@ -37,4 +37,5 @@
       <column name="done" valueBoolean="false"></column>
   </insert>
   </changeSet>
+ 
 </databaseChangeLog>
