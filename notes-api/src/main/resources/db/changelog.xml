@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="1" author="skhanov">
+    <createTable tableName="notes">
+      <column name="id" type="int">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="text" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="done" type="boolean">
+          <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="2" author="sekhanov">
+      <insert tableName="notes">
+          <column name="id" valueNumeric="1"></column>
+          <column name="text" value="some note"></column>
+          <column name="done" valueBoolean="true"></column>
+      </insert>
+      <insert tableName="notes">
+        <column name="id" valueNumeric="2"></column>
+        <column name="text" value="some note 2"></column>
+        <column name="done" valueBoolean="false"></column>
+    </insert>
+    <insert tableName="notes">
+      <column name="id" valueNumeric="3"></column>
+      <column name="text" value="some note 3"></column>
+      <column name="done" valueBoolean="false"></column>
+  </insert>
+  </changeSet>
+</databaseChangeLog>

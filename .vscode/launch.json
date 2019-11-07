@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "notes-api",
+            "request": "launch",
+            "mainClass": "com.sekhanov.notesapi.DemoApplication",
+            "projectName": "notes-api"
+        }
+    ]
+}
