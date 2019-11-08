@@ -6,7 +6,10 @@
             "request": "launch",
             "mainClass": "com.sekhanov.notesapi.DemoApplication",
             "projectName": "notes-api",
-            "console": "internalConsole"
+            "console": "internalConsole",
+            "cwd": "${workspaceFolder}/notes-api",
+            "preLaunchTask": "liquibaseinit"
+
         }
     ]
 }

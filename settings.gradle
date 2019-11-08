@@ -9,4 +9,4 @@
 
 rootProject.name = 'my-spring-angular-notes'
 
-include 'notes-api'
+include 'notes-api', 'notes-ui'
