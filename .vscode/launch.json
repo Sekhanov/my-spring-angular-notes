@@ -1,12 +1,20 @@
 {
     "configurations": [
         {
+            "type": "chrome",
+            "request": "launch",
+            "name": "notes-ui",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}/notes-ui",
+            "preLaunchTask": "note-ui-start"
+        },
+        {
             "type": "java",
             "name": "notes-api",
             "request": "launch",
             "mainClass": "com.sekhanov.notesapi.DemoApplication",
             "projectName": "notes-api",
-            "console": "internalConsole",
+            "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/notes-api",
             "preLaunchTask": "liquibaseinit"
 

@@ -2,12 +2,21 @@
     "version": "2.0.0",
     "tasks": [
         {
-            
             "label": "liquibaseinit",
             "type": "shell",
             "command": "gradle update",
             "group": "build",
             "problemMatcher": []
+        },
+        {
+            "label": "note-ui-start",
+            "type": "npm",
+            "script": "start",
+            "path": "notes-ui/",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]    
 }
