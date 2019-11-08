@@ -6,7 +6,7 @@
             "name": "notes-ui",
             "url": "http://localhost:4200",
             "webRoot": "${workspaceFolder}/notes-ui",
-            "preLaunchTask": "note-ui-start"
+            // "preLaunchTask": "note-ui-start"
         },
         {
             "type": "java",
