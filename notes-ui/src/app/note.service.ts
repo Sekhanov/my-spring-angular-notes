@@ -16,7 +16,8 @@ export class NoteService {
 
   constructor(private http: HttpClient) { }
 
-  url = 'http://localhost:8080/api/notes';
+  // url = 'http://localhost:8080/api/notes';
+  url = '/api/notes';
 
   getAllNotes(): Observable<Note[]> {
     return this.http.get<Note[]>(this.url, httpOptions).pipe(
